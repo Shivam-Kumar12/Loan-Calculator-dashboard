@@ -1,3 +1,6 @@
+#**Preview link**
+https://loan-calculator-dashboard-ayzd7484v-shivam-kumar12s-projects.vercel.app/
+
 # **Loan Calculator Dashboard**
 
 A **simple and interactive Loan Calculator Dashboard** built using **React** and **Material UI**. This application helps users calculate loan details and explore financial options with real-time data, including live exchange rates.
