@@ -1,3 +1,4 @@
+import React from 'react';
 const ErrorPage = () => {
     return (
       <div style={{ padding: '2rem', color: 'red' }}>
