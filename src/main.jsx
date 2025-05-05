@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import { ThemeProviderCustom } from './context/ThemeContext'; // 👈 adjust the path if needed
+import { BrowserRouter } from 'react-router-dom';
+import { ThemeProviderCustom } from './context/ThemeContext';
+import { LoanProvider } from './context/LoanContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ThemeProviderCustom> {/* 👈 wrap the app in your ThemeContext provider */}
-      <App />
-    </ThemeProviderCustom>
+    <BrowserRouter> {/* ✅ Only here */}
+      <ThemeProviderCustom>
+        <LoanProvider>
+          <App />
+        </LoanProvider>
+      </ThemeProviderCustom>
+    </BrowserRouter>
   </React.StrictMode>
 );

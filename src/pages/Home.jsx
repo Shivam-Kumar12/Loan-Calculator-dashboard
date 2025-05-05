@@ -1,11 +1,20 @@
+import { Container, Typography, Box } from '@mui/material';
+import CalculatorForm from '../components/CalculatorForm';
+import EMITable from '../components/EMITable.jsx';
+import React from 'react';
+
 const Home = () => {
-    return (
-      <div style={{ padding: '2rem' }}>
-        <h1>Welcome to the Loan Calculator Dashboard</h1>
-        <p>This tool helps you calculate EMIs, check exchange rates, and more.</p>
-      </div>
-    );
-  };
-  
-  export default Home;
-  
+  return (
+    <Container>
+      <Box sx={{ mt: 4 }}>
+        <Typography variant="h4" gutterBottom>
+          Loan Calculator Dashboard
+        </Typography>
+        <CalculatorForm />
+        <EMITable />
+      </Box>
+    </Container>
+  );
+};
+
+export default Home;
