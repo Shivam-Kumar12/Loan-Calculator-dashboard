@@ -1,4 +1,3 @@
-// src/hooks/useEMICalculator.js
 const useEMICalculator = (P, R, N) => {
     const monthlyRate = R / (12 * 100);
     const emi = (P * monthlyRate * Math.pow(1 + monthlyRate, N)) /
