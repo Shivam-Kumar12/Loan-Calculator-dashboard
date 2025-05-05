@@ -8,7 +8,7 @@ const useExchangeRates = (base = 'USD') => {
   useEffect(() => {
     const fetchRates = async () => {
       try {
-        const res = await axios.get(`/api/v6/${import.meta.env.VITE_EXCHANGE_RATE_API_KEY}/latest/${base}`);
+        const res = await axios.get(`https://v6.exchangerate-api.com/v6/${import.meta.env.VITE_EXCHANGE_RATE_API_KEY}/latest/${base}`);
         setRates(res.data.conversion_rates);
       } catch (err) {
         console.error("Failed to fetch exchange rates:", err);
