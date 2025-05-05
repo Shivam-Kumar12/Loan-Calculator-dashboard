@@ -46,8 +46,19 @@ A **simple and interactive Loan Calculator Dashboard** built using **React** and
 ---
 
 ## **📸 Preview**
+##Home Page
+![image](https://github.com/user-attachments/assets/a07e73d0-ffe0-434c-be3d-10194d5d3edf)
+![image](https://github.com/user-attachments/assets/d3a398be-397c-4e42-b200-49aa8ce0bcb2)
 
-> Add screenshots or a demo GIF here to showcase your app visually.
+##Excahnge Rate api
+![image](https://github.com/user-attachments/assets/11e599c8-be85-4e5a-9208-1278c4a9d09b)
+
+##Error page
+![image](https://github.com/user-attachments/assets/73c91c46-6e16-40fd-9657-cc972ce05628)
+
+
+
+
 
 ---
 
