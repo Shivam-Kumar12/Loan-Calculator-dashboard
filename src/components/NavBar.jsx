@@ -34,18 +34,18 @@ const Navbar = () => {
   ];
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: darkMode ? '#333' : '#fff' }}>
-        <Container maxWidth="lg">
+    <Box>
+      <AppBar position="static" sx={{ backgroundColor: 'dodgerblue' }}>
+        <Container maxWidth="lg sx={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold' }}>">
           <Toolbar disableGutters>
             <Typography
-              variant="h6"
+              variant="h5"
               component={Link}
               to="/"
-              sx={{
+              sx={{ 
                 flexGrow: 1,
                 textDecoration: 'none',
-                color: textColor
+                color: textColor,
               }}
             >
               Loan Calculator
@@ -55,12 +55,12 @@ const Navbar = () => {
               <IconButton
                 edge="end"
                 onClick={handleDrawerToggle}
-                sx={{ color: textColor }}
+                sx={{ color: textColor}}
               >
                 <MenuIcon />
               </IconButton>
             ) : (
-              <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              <Box sx={{ display: 'flex', alignItems: 'center', ml: 'auto' }}>
                 {navLinks.map((link) => (
                   <Button
                     key={link.to}
