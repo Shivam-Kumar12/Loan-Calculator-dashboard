@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/NavBar';
 import Home from './pages/Home';
 import ExchangeRates from './pages/ExchangeRates';
@@ -8,9 +8,14 @@ import NotFound from './pages/NotFound';
 import React from 'react';
 
 const App = () => {
+  const location = useLocation();
+
+  const shouldHideNavbar = location.pathname === '/error';
+
   return (
     <>
-      <Navbar />
+      {!shouldHideNavbar && <Navbar />}
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/exchange" element={<ExchangeRates />} />
