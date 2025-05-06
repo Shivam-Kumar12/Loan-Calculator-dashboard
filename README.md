@@ -1,5 +1,5 @@
 #**Preview link**
-https://loan-calculator-dashboard-ayzd7484v-shivam-kumar12s-projects.vercel.app/
+[https://loan-calculator-dashboard-ayzd7484v-shivam-kumar12s-projects.vercel.app/](https://loan-calculator-dashboard-kohl.vercel.app/)
 
 # **Loan Calculator Dashboard**
 
